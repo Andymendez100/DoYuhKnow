@@ -1,0 +1,90 @@
+body{
+    background-color:#eff0f2;
+}
+
+.nav-wrapper{
+    background-color: #455a64;   
+}
+.page-footer{
+    background-color: #455a64;  
+}
+
+.headerpage{
+    background-image: url(https://www.traceinternational.org/Uploads/BlogPostImages/Feb2_Blog-Email-Header_1.png);
+    height: 450px;
+}
+
+.btn-lg{
+    color: white;
+    background-color: #455a64;
+    margin-right: 10px; 
+}
+.brand-logo{
+    margin-right: 50px;
+}
+
+.offset-s3 {
+    margin-top: 50px; 
+    margin-right: 350px;
+}
+
+.username,.password{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-title{
+    color: white;
+}
+
+
+.cardpic{
+    height: 150px;
+    widows: 150px;
+}
+
+.gamemode{
+    width: 400px;
+}
+
+.chat{
+    height: 40%;
+    margin-left: 10px;
+}
+.allmessages{
+    height: 100px; 
+    overflow-y : auto;   
+}
+
+.header{
+    background: #14c9c0;
+}
+
+.textbox{
+    height: 40%;
+}
+
+.messagegame {
+    margin-top: 200px;
+}
+
+.questionbox{
+    background-color: #455a64;
+    height: 100px;
+}
+
+.something{
+    margin-top: 50px;
+    border: 1px solid #455a64;
+    border-radius: 10px;
+    background: url(https://www.ericroy.ca/wp-content/uploads/2017/09/question-marks-background-5048.jpeg)
+}
+
+.btn-large{
+    margin-right: 20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+.questiontext{
+    color: #14c9c0;
+}
