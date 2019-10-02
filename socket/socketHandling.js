@@ -33,6 +33,7 @@ module.exports = io => {
       });
     });
 
+    // Video
     socket.on('join', function(data) {
       socket.join(data.roomId);
       socket.room = data.roomId;
