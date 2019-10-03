@@ -54,7 +54,7 @@ class Chat extends Component {
           
             <div className='card chat blue-grey darken-1'>
               <div className='card-body'> 
-                <span className='card-title'>Global Chat for players</span>
+                <span className='card-title'>Bob the Builder</span>
               </div>
 
                 <div className="allmessages">

@@ -5,16 +5,17 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "yarn run start --prefix client",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
-    "heroku-postbuild": "yarn_CONFIG_PRODUCTION=false yarn install --prefix client && yarn run prebuild --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run prebuild --prefix client"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "clsx": "^1.0.4",
     "concurrently": "^3.6.0",
     "cors": "^2.8.5",
     "express": "^4.16.3",

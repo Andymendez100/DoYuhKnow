@@ -1,27 +1,26 @@
 
+import React from 'react';
 
-import React from 'react'
+let style = {
+  display: 'block',
+  backgroundColor: '#3f51b5',
+  borderTop: '1px solid #E7E7E7',
+  textAlign: 'center',
+  padding: '20px',
+  position: 'fixed',
+  left: '0',
+  bottom: '0',
+  width: '100%',
+};
 
-export default function Footer() {
+export default function Footer({ children }) {
   return (
     <div>
-    <footer className="page-footer">
-    <div className="container">
-      <div className="row">
-        <div className="col l6 s12">
-          <h5 className="white-text">Quiz-game</h5>
-          <p className="grey-text text-lighten-4">A fun Quiz-game for every one. With random category questions</p>
-        </div>
-    
+      {/* <div style={phantom} /> */}
+      <div style={style}>
+        {children} <div>LoX Entertainment</div>
       </div>
     </div>
-    <div className="footer-copyright">
-      <div className="container">
-      © 2018 - Quizznet
-      </div>
-    </div>
-  </footer>
-      
-    </div>
-  )
+  );
 }
+
