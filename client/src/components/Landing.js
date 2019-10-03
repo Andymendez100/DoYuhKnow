@@ -6,10 +6,7 @@ import { fetchCurrentUser } from '../actions/index';
 import { Button } from '@material-ui/core';
 import './homepage/homepage.css';
 
-
-
 class Landing extends Component {
-
   componentDidMount() {
     this.props.fetchCurrentUser();
   }
@@ -17,44 +14,51 @@ class Landing extends Component {
   renderComponent() {
     if (!this.props.auth) {
       return (
-        <div className="container">
-          <div className="logo" />
+        <div className='container'>
+          <div className='logo' />
           <div className='one-line-header'>
-            <p>Lorem Ipsum is simply dummy text for people</p>
+            <p>Quiz Game for People</p>
           </div>
           <div className='mission-statement'>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's more writing more
-          writing</p>
+            <p> How well do you really know each other?</p>
           </div>
-          <Button variant='contained' color='primary' component={Link} to='register'> Sign Up</Button>
-          <Button variant='contained' color='primary' component={Link} to='login'> Login </Button>
-
-        </div >
-
-
+          <Button
+            variant='contained'
+            color='primary'
+            component={Link}
+            to='register'
+          >
+            {' '}
+            Sign Up
+          </Button>
+          <Button
+            variant='contained'
+            color='primary'
+            component={Link}
+            to='login'
+          >
+            {' '}
+            Login{' '}
+          </Button>
+        </div>
       );
-    }
-    else {
-      return (
-        <Dashboard username={this.props.auth.username} />
-      );
+    } else {
+      return <Dashboard username={this.props.auth.username} />;
     }
   }
 
   render() {
-    return (
-      <div>
-        {this.renderComponent()}
-      </div>
-    )
+    return <div>{this.renderComponent()}</div>;
   }
 }
 
 function mapStateToProps({ auth }) {
   return {
     auth: auth
-  }
+  };
 }
 
-export default connect(mapStateToProps, { fetchCurrentUser })(Landing);
+export default connect(
+  mapStateToProps,
+  { fetchCurrentUser }
+)(Landing);
