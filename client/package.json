@@ -11,6 +11,8 @@
     "build": "node server"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
     "axios": "^0.18.0",
     "babel-preset-stage-1": "^6.24.1",
     "lodash": "^4.17.11",
