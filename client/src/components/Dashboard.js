@@ -12,9 +12,7 @@ class Dashboard extends Component {
       <Fragment>
         <div className='row'>
           <div className='col s3'>
-            <h1 className='display-3'>
-              Welcome back,{' ' + this.props.username}
-            </h1>
+            <h1 className='display-3'>Welcome,{' ' + this.props.username}</h1>
           </div>
           <div className='col s3'>
             <Chat username={this.props.username} />

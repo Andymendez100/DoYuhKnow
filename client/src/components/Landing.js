@@ -4,7 +4,7 @@ import Dashboard from './Dashboard';
 import { connect } from 'react-redux';
 import { fetchCurrentUser } from '../actions/index';
 import { Button } from '@material-ui/core';
-import './homepage/homepage.css';
+import '../style/dashboard.css';
 
 class Landing extends Component {
   componentDidMount() {
@@ -22,6 +22,7 @@ class Landing extends Component {
           <div className='mission-statement'>
             <p> How well do you really know each other?</p>
           </div>
+          <br />
           <Button
             variant='contained'
             color='primary'
@@ -31,6 +32,7 @@ class Landing extends Component {
             {' '}
             Sign Up
           </Button>
+          <br />
           <Button
             variant='contained'
             color='primary'
