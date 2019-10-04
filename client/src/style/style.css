@@ -1,5 +1,7 @@
 /* Added animated clouds to bg*/
 body {
+  width: 100%;
+  height: 100%;
   background-image: url(../Images/bg-clouds.png);
   background-position: 0px 0px;
   background-repeat: repeat-x;
@@ -17,6 +19,7 @@ body {
     background-position: 100% 0;
   }
 }
+
 .nav-wrapper {
   background-color: #455a64;
 }
