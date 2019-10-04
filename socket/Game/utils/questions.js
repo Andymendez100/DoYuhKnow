@@ -221,10 +221,10 @@ module.exports = {
         "type": "multiple",
         "difficulty": "easy",
         "question": "Which of these songs by Skrillex and Diplo features Justin Bieber?",
-        "correct_answer": "Where Are Ü Now",
+        "correct_answer": "Where Are U Now",
         "incorrect_answers": [
-            "To Ü",
-            "Take Ü There",
+            "To U",
+            "Take U There",
             "Cinema"
         ]
     },
@@ -295,7 +295,7 @@ module.exports = {
         "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
         "correct_answer": "Spruce Goose",
         "incorrect_answers": [
-            "Noah&#039;s Ark",
+            "Noah's Ark",
             "Fat Man",
             "Trojan Horse"
         ]
@@ -352,24 +352,24 @@ module.exports = {
         "category": "Entertainment: Television",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "The Psycho series of videos on YouTube was created by which of the following?",
-        "correct_answer": "RiDGiD STUDiOS",
+        "question": "Who was the youngest person to host Saturday Night Live?",
+        "correct_answer": "Drew Barrymore",
         "incorrect_answers": [
-            "Dan Bell",
-            "Billy Familia",
-            "VeganGainz"
+            "Macaulay Culkin",
+            "Fred Savage",
+            "Miley Cyrus"
         ]
     },
     {
         "category": "Entertainment: Video Games",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What ingredients are required to make a cake in Minecraft?",
-        "correct_answer": "Milk, Sugar, Egg, and Wheat",
+        "question": "Who is the brother of Liquid Snake?",
+        "correct_answer": "Solid Snake",
         "incorrect_answers": [
-            "Milk, Bread, Egg, and Wheat",
-            "Milk, Sugar Cane, Egg, and Wheat",
-            "Milk, Sugar, and Wheat"
+            "Raiden",
+            "Sniper Wolf",
+            "Big Boss"
         ]
     },
     {
@@ -412,19 +412,19 @@ module.exports = {
         "category": "Entertainment: Japanese Anime & Manga",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "In The Melancholy of Haruhi Suzumiya series, the SOS Brigade club leader is unknowingly treated as a(n) __ by her peers.",
-        "correct_answer": "God",
+        "question": "In the anime Naruto, who is the teacher of Naruto, Minato, Pein?",
+        "correct_answer": "Jiraiya",
         "incorrect_answers": [
-            "Alien",
-            "Time Traveler",
-            "Esper"
+            "Tsunade",
+            "Orochimaru",
+            "Kakashi"
         ]
     },
     {
         "category": "Entertainment: Music",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "The 2016 song Starboy by Canadian singer The Weeknd features which prominent electronic artist?",
+        "question": "What group did the soundtrack for Tron Legacy?",
         "correct_answer": "Daft Punk",
         "incorrect_answers": [
             "deadmau5",
@@ -436,8 +436,8 @@ module.exports = {
         "category": "Entertainment: Music",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "Which Disney character sings the song A Dream is a Wish Your Heart Makes?",
-        "correct_answer": "Cinderella",
+        "question": 'Which Disney character sings "A Whole New World"?',
+        "correct_answer": "Jasmine",
         "incorrect_answers": [
             "Belle",
             "Snow White",
@@ -484,24 +484,24 @@ module.exports = {
         "category": "Entertainment: Television",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "Who won Big Brother 2014 UK?",
-        "correct_answer": "Helen Wood",
+        "question": "Who won Big Brother Season 20?",
+        "correct_answer": "Kaycee Clark",
         "incorrect_answers": [
-            "Christopher Hall",
-            "Pauline Bennett",
-            "Pavandeep &quot;Pav&quot; Paul"
+            "Derrick Levasseur",
+            "Dan Gheesling",
+            "Nicole Franzel"
         ]
     },
     {
         "category": "Entertainment: Film",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "At the end of the 2001 film Rat Race, whose concert do the contestants crash?",
-        "correct_answer": "Smash Mouth",
+        "question": '"In the End" is a song by American rock band _____?',
+        "correct_answer": "Linkin Park",
         "incorrect_answers": [
             "Bowling for Soup",
             "Sum 41",
-            "Linkin Park"
+            "Smash Mouth"
         ]
     },
     {
@@ -520,11 +520,11 @@ module.exports = {
         "category": "History",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "The Trail of Tears was a result of which United States Presidents Indian Removal Policy?",
-        "correct_answer": "Andrew Jackson",
+        "question": "Who was the fifth president of the United States?",
+        "correct_answer": "James Monroe",
         "incorrect_answers": [
-            "Harry S. Truman",
-            "Martin Van Buren",
+            "George Washington",
+            "Abraham Lincoln",
             "John Quincy Adams"
         ]
     },
@@ -532,20 +532,20 @@ module.exports = {
         "category": "Entertainment: Video Games",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "Which Kirby game first introduced Copy Abilities?",
-        "correct_answer": "Kirbys Adventure",
+        "question": "What planet does Kirby live on?",
+        "correct_answer": "Popstar",
         "incorrect_answers": [
-            "Kirbys Super Star",
-            "Kirbys Dream Land 2",
-            "Kirbys Dream Land"
+            "Mars",
+            "Earth",
+            "Wispy Woods"
         ]
     },
     {
         "category": "Entertainment: Music",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "Which of the following songs did Elton John perform following Princess Dianes passing?",
-        "correct_answer": "Candles in the Wind",
+        "question": "Which of the following songs did Elton John made for Lion King?",
+        "correct_answer": "Can you Feel The Love Tonight",
         "incorrect_answers": [
             "I Guess Thats Why They Call It The Blues",
             "Your Song",
@@ -580,8 +580,8 @@ module.exports = {
         "category": "Geography",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "What is the capital of Scotland?",
-        "correct_answer": "Edinburgh",
+        "question": "What is the capital of Sweden?",
+        "correct_answer": "Stockholm",
         "incorrect_answers": [
             "Glasgow",
             "Dundee",
@@ -592,11 +592,11 @@ module.exports = {
         "category": "History",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "Which country was Josef Stalin born in?",
-        "correct_answer": "Georgia",
+        "question": "Which country was Albert Einstein born in?",
+        "correct_answer": "Germany",
         "incorrect_answers": [
             "Russia",
-            "Germany",
+            "United States",
             "Poland"
         ]
     }

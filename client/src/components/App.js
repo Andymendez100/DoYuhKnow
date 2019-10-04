@@ -17,10 +17,7 @@ class App extends Component {
         return (
             <div>
                 <BrowserRouter>
-
                     <div>
-
-
                         <Hamburger />
                         <Switch>
 
