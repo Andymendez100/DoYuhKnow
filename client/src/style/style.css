@@ -1,7 +1,5 @@
 /* Added animated clouds to bg*/
 body {
-  width: 560px;
-  height: 400px;
   background-image: url(../Images/bg-clouds.png);
   background-position: 0px 0px;
   background-repeat: repeat-x;
