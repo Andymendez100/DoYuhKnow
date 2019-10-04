@@ -4,7 +4,12 @@ import '../style/Footer.css';
 export default function Footer() {
   return (
     <div>
-      <div className='footer'>
+      <a
+        className='footer'
+        href='https://github.com/Andymendez100/DoYuhKnow'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <span>L</span>
         <span>o</span>
         <span>X</span>
@@ -23,7 +28,7 @@ export default function Footer() {
         <span>n</span>
         <span>t</span>
         <span>&copy;</span>
-      </div>
+      </a>
     </div>
   );
 }
