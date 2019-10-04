@@ -49,8 +49,8 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className='chatBox'>
-        <div className='row'>
+      <div className='row'>
+        <div className='col'>
           <div className='card chat blue-grey darken-1'>
             <div className='card-body'>
               <span className='card-title'>Group Chat</span>

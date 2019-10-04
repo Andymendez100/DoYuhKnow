@@ -12,25 +12,23 @@ class GameMode extends Component {
 
   render() {
     return (
-      <div className='row'>
-        <div className='col s12 m7'>
-          <div className='card gamemode'>
-            <div className='header'>
-              <h1 className='card-title center'>REGULAR GAME</h1>
-            </div>
+      <div className='col s3'>
+        <div className='card gamemode'>
+          <div className='header'>
+            <h1 className='card-title center'>REGULAR GAME</h1>
+          </div>
 
-            <div className='card-content'>
-              <p>Are you ready to play a round of Multiplayer Quiz?</p>
-            </div>
+          <div className='card-content'>
+            <p>Are you ready to play a round of Multiplayer Quiz?</p>
+          </div>
 
-            <div className='card-action'>
-              <button
-                className='btn btn-primary form-control'
-                onClick={this.start.bind(this)}
-              >
-                Start Game
-              </button>
-            </div>
+          <div className='card-action'>
+            <button
+              className='btn btn-primary form-control'
+              onClick={this.start.bind(this)}
+            >
+              Start Game
+            </button>
           </div>
         </div>
       </div>
