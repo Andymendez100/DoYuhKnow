@@ -1,26 +1,34 @@
-
 import React from 'react';
+import '../style/Footer.css';
 
-let style = {
-  display: 'block',
-  backgroundColor: '#3f51b5',
-  borderTop: '1px solid #E7E7E7',
-  textAlign: 'center',
-  padding: '20px',
-  position: 'fixed',
-  left: '0',
-  bottom: '0',
-  width: '100%',
-};
-
-export default function Footer({ children }) {
+export default function Footer() {
   return (
     <div>
-      {/* <div style={phantom} /> */}
-      <div style={style}>
-        {children} <div>LoX Entertainment</div>
-      </div>
+      <a
+        className='footer'
+        href='https://github.com/Andymendez100/DoYuhKnow'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <span>L</span>
+        <span>o</span>
+        <span>X</span>
+        <span>&nbsp;</span>
+        <span>E</span>
+        <span>n</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+        <span>t</span>
+        <span>a</span>
+        <span>i</span>
+        <span>n</span>
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+        <span>&copy;</span>
+      </a>
     </div>
   );
 }
-
