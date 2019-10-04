@@ -24,7 +24,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 // Images
-import logo1 from '../../Images/KnowMeResize.png';
+import logo1 from '../../static/Images/KnowMeResize.png';
 
 const drawerWidth = 240;
 
