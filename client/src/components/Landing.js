@@ -1,61 +1,77 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import Dashboard from './Dashboard'; 
-import {connect} from 'react-redux'; 
-import {fetchCurrentUser} from '../actions/index'; 
+import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import Dashboard from './Dashboard';
+import { connect } from 'react-redux';
+import { fetchCurrentUser } from '../actions/index';
+import { Button } from '@material-ui/core';
+import '../style/dashboard.css';
+import logo from '../static/Images/KnowMe.png';
 
-
-class Landing extends Component{
-  
-  componentDidMount(){
+class Landing extends Component {
+  componentDidMount() {
     this.props.fetchCurrentUser();
   }
 
-  renderComponent(){
-    if(!this.props.auth){
-      return(
-        <div className="headerpage jumbotron">
-        <div className="container">
-          <h1 className="display-3">Welcome to QUIZZNET</h1>
-          <b><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderitin voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </b>
-          <p>
-          <Link className="btn btn-primary btn-lg" to="login" role="button">
-            login
-          </Link>
-          <Link className="btn btn-primary btn-lg" to="register" role="button">
-            Register
-          </Link>
-          </p>
-        </div>
-  
-        </div>  
-      );
-    }
-    else{
-      return(
-        <Dashboard username={this.props.auth.username}/>
-      );
-    }
-  }
-
-  render(){
+  renderComponent() {
+    if (!this.props.auth) {
       return (
-        <div>
-           {this.renderComponent()}
+        <div className='container center-align vertical-center'>
+          <div className='row'>
+            <div className='col s12'>
+              <img className='logo' src={logo} />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col'>
+              <div className='one-line-header'>
+                <p>Quiz Game for People</p>
+              </div>
+              <div className='mission-statement'>
+                <p> How well do you really know each other?</p>
+              </div>
+              <br />
+              <br />
+              <Button
+                variant='contained'
+                color='primary'
+                component={Link}
+                to='register'
+              >
+                {' '}
+                Sign Up
+              </Button>
+              <br />
+              <br />
+              <Button
+                variant='contained'
+                color='primary'
+                component={Link}
+                to='login'
+              >
+                {' '}
+                Login{' '}
+              </Button>
+            </div>
+          </div>
         </div>
-      )
+      );
+    } else {
+      return <Dashboard username={this.props.auth.username} />;
     }
-}
+  }
 
-function mapStateToProps({auth}){
-  return{
-     auth: auth
+  render() {
+    return <div>{this.renderComponent()}</div>;
   }
 }
 
-export default connect(mapStateToProps, {fetchCurrentUser})(Landing);
+function mapStateToProps({ auth }) {
+  return {
+    auth: auth
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  { fetchCurrentUser }
+)(Landing);
