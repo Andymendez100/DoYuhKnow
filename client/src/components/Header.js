@@ -7,18 +7,18 @@ class Header extends Component {
       case null:
       case false:
         return [
-          <li key="login">
-            <Link to="login">Login</Link>
+          <li key='login'>
+            <Link to='login'>Login</Link>
           </li>,
-          <li key="create">
-            <Link to="register">Create a user</Link>
+          <li key='create'>
+            <Link to='register'>Create a user</Link>
           </li>
         ];
       default:
         return [
-          <li key="3">{`Username: ${this.props.auth.username}`}</li>,
-          <li key="1">
-            <a href="/api/logout">Logout</a>
+          <li key='3'>{`Username: ${this.props.auth.username}`}</li>,
+          <li key='1'>
+            <a href='/api/logout'>Logout</a>
           </li>
         ];
     }
@@ -28,11 +28,11 @@ class Header extends Component {
     return (
       <div>
         <nav>
-          <div className="nav-wrapper">
-            <Link to="/" className="brand-logo center">
-              QUIZZNET
+          <div className='nav-wrapper'>
+            <Link to='/' className='brand-logo center'>
+              YDEKM
             </Link>
-            <ul className="right">{this.renderingContent()}</ul>
+            <ul className='right'>{this.renderingContent()}</ul>
           </div>
         </nav>
       </div>
