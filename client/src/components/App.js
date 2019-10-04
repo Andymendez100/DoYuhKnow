@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-// import Header from './Header';
 import Hamburger from './hamburgerMenu/drawer';
 import Footer from './Footer';
-// import Landing from './landing';
-import Landing from './Landing'
+import Landing from './Landing';
 import Login from './Login';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import registration from '../components/registrationform/Registration';
