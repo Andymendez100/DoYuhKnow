@@ -1,45 +1,27 @@
-.container {
-  top: 1rem;
-  position: fixed;
-  display: flex;
-  margin: 30%;
-  height: 6.25rem;
-  width: 40%;
-  flex-direction: column;
-  align-self: center;
-  justify-content: space-around;
-  align-content: center;
-}
 .logo {
-  min-height: 7.5rem;
-  background-position: center;
-  background-size: 100% 100%;
-  background-image: url('../Images/KnowMe.png');
-  padding: 1rem;
-  margin: 0;
-  flex: 1;
+  max-width: 70%;
+  height: auto;
 }
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .one-line-header {
   font-family: 'Crimson Pro', serif;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
-  flex: 1;
-  text-align: center;
-  /* margin-bottom: 20px; */
-  /* padding-top: 50px; */
 }
+
 .mission-statement {
   font-family: 'Crimson Pro', serif;
   color: black;
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-weight: bold;
-  flex: 1;
-  text-align: center;
-  /* margin-bottom: 100px;  */
 }
-
-/* .homepageButton {
-    padding: 5px;
-    margin: 10px 100px;
-  } */
