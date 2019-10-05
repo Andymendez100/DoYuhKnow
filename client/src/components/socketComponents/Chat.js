@@ -49,8 +49,8 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className='row'>
-        <div className='col'>
+      <div className='row mb-5'>
+        <div className='col s12'>
           <div className='card chat blue-grey darken-1'>
             <div className='card-body'>
               <span className='card-title'>Group Chat</span>
@@ -68,7 +68,7 @@ class Chat extends Component {
               />
               <br />
               <button
-                className='btn btn-primary form-control'
+                className='btn btn-large indigo darken-1 form-control'
                 onClick={this.sendMessage.bind(this)}
               >
                 Send

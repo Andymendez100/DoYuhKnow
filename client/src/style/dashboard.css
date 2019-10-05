@@ -1,29 +1,14 @@
-.logo {
-  max-width: 70%;
-  height: auto;
+.wel-message {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+/* GameMode */
+.start-button {
 }
 
-.one-line-header {
-  font-family: 'Crimson Pro', serif;
-  color: black;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-.mission-statement {
-  font-family: 'Crimson Pro', serif;
-  color: black;
-  font-size: 1.35rem;
-  font-weight: bold;
+/* Chat */
+.chat-box {
 }
 #mainPagebutton {
   width: 20%;

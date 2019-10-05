@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
 /* Added animated clouds to bg*/
 body {
   width: 100%;
@@ -53,7 +55,7 @@ body {
 }
 
 .card-title {
-  color: white;
+  color: lightblue;
 }
 
 .cardpic {
@@ -61,13 +63,10 @@ body {
   widows: 150px;
 }
 
-.gamemode {
-  width: 400px;
-}
-
 .chat {
   height: 100%;
   margin: 10px 10px 10px 10px;
+  color: whitesmoke;
 }
 .allmessages {
   height: 100px;
