@@ -32,7 +32,7 @@ class Timer extends Component {
         if (this.state.QuestionNumber < 10) {
             if (this.state.CountDown === 0) {
                 this.setState({
-                    CountDown: 10
+                    CountDown: 1
                 });
 
                 this.setState({ QuestionNumber: this.state.QuestionNumber + 1 });

@@ -1,0 +1,62 @@
+
+.questionbox {
+    height: 100px;
+    background-color: #546e7a;
+} 
+.something {
+    font-size: 24px;
+    font-weight: 300;
+    color: lightblue;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #546e7a; 
+}
+.jumbotron {
+    padding: 1rem;
+}
+#scoreboard  {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;  
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 20%;
+    background-color: #546e7a;      
+    border-radius: 5px;
+}
+#scoreboard-title {
+    font-weight: 300;
+    color: lightblue !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 20px 20%;
+}
+h4 {
+    font-weight: 300;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.3;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.list-group {
+    border-top: 1px solid #455a64;     
+    color: lightblue;
+    list-style-type: none;
+}
+.list-group-item {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: transparent;
+}
+.btn-large {
+    margin: 10px;
+    border-radius: 5px;
+}
+.quiz {
+    padding-top: 20px;
+}
+.questiontext {
+    color: lightblue;
+    background-color: none;
+}

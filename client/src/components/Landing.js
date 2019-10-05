@@ -4,8 +4,8 @@ import Dashboard from './Dashboard';
 import { connect } from 'react-redux';
 import { fetchCurrentUser } from '../actions/index';
 import { Button } from '@material-ui/core';
-import '../style/dashboard.css';
-import logo from '../Images/KnowMe.png';
+import '../style/landing.css';
+import logo from '../static/Images/KnowMe.png';
 
 class Landing extends Component {
   componentDidMount() {

@@ -58,7 +58,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: 'rgba(255,255,255,0.14)'
+    backgroundColor: '#546e7a',
+    opacity: .9
   },
   drawerHeader: {
     display: 'flex',
