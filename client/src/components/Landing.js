@@ -34,10 +34,11 @@ class Landing extends Component {
               <Button
                 variant='contained'
                 color='primary'
+                id='mainPageButton'
                 component={Link}
                 to='register'
               >
-                {' '}
+
                 Sign Up
               </Button>
               <br />
@@ -45,11 +46,12 @@ class Landing extends Component {
               <Button
                 variant='contained'
                 color='primary'
+                id='mainPageButton'
                 component={Link}
                 to='login'
               >
-                {' '}
-                Login{' '}
+
+                Login
               </Button>
             </div>
           </div>
