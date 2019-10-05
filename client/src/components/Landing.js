@@ -27,7 +27,7 @@ class Landing extends Component {
                 <p>Are you smarter then your friends?</p>
               </div>
               <div className='mission-statement'>
-                <p> You think you're smart? Play this to double check...</p>
+                <p> Play this to double check...</p>
               </div>
               <br />
               <br />
