@@ -97,6 +97,10 @@ function PersistentDrawerLeft(props) {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  const logoutUser = () => {
+
+    location.href = '/api/logout';
+  }
 
   const renderingContent = () => {
     switch (props.auth) {
@@ -182,8 +186,8 @@ function PersistentDrawerLeft(props) {
               </MenuItem>
             </MenuList>
             <MenuList>
-              <MenuItem onClick={handleDrawerClose}>
-                <a href="/api/logout">Log Out</a>
+              <MenuItem onClick={handleDrawerClose, logoutUser}>
+                Log Out
               </MenuItem>
             </MenuList>
           </div>
