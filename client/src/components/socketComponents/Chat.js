@@ -41,7 +41,12 @@ class Chat extends Component {
       return (
         <div key={index}>
           {' '}
-          {message.username}: {message.message}{' '}
+          {
+            <b>
+              <em>{message.username}:</em>
+            </b>
+          }{' '}
+          {message.message}{' '}
         </div>
       );
     });
@@ -49,14 +54,16 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className='row mb-5'>
+      <div className='row mb-8'>
         <div className='col s12'>
-          <div className='card chat blue-grey darken-1'>
+          <div className='card chat wrapper'>
             <div className='card-body'>
               <span className='card-title'>Group Chat</span>
             </div>
 
-            <div className='allmessages'>{this.renderMessages()}</div>
+            <div className='all-messages left-align'>
+              {this.renderMessages()}
+            </div>
 
             <div className='card-action'>
               <input
@@ -66,9 +73,8 @@ class Chat extends Component {
                 value={this.state.message}
                 onChange={ev => this.setState({ message: ev.target.value })}
               />
-              <br />
               <button
-                className='btn btn-large indigo darken-1 form-control'
+                className='btn btn-large indigo darken-1 chat-btn form-control'
                 onClick={this.sendMessage.bind(this)}
               >
                 Send

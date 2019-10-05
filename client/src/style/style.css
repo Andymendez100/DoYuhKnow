@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 
+html {
+  height: 100%;
+}
+
 /* Added animated clouds to bg*/
 body {
   width: 100%;
@@ -20,6 +24,10 @@ body {
   to {
     background-position: 100% 0;
   }
+}
+
+.container {
+  height: 70%;
 }
 
 .nav-wrapper {
@@ -52,10 +60,6 @@ body {
 .password {
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.card-title {
-  color: lightblue;
 }
 
 .cardpic {
@@ -99,8 +103,7 @@ body {
 } */
 
 .btn-large {
-  margin-right: 20px;
-  margin-top: 20px;
+  padding: 0px 10px;
   border-radius: 10px;
 }
 /* .questiontext {
@@ -115,26 +118,6 @@ body {
   height: 50%;
   margin: 10% 0%;
   padding: 20px;  
-}
-/* 
-#centerElement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-}​ */
-
-#centerElement {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
 }
 
 #panel {

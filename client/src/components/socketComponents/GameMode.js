@@ -16,7 +16,7 @@ class GameMode extends Component {
         className='btn btn-large indigo darken-1 start-button form-control'
         onClick={this.start.bind(this)}
       >
-        Play Game
+        Start Game
       </button>
     );
   }
