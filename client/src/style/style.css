@@ -26,9 +26,9 @@ body {
   }
 }
 
-.container {
+/* .container {
   height: 70%;
-}
+} */
 
 .nav-wrapper {
   background-color: #455a64;
@@ -100,4 +100,10 @@ body {
   background-color: rgba(84, 110, 122, 0.8);
   padding: 20px;
   border-radius: 5px;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: whitesmoke !important;
 }
