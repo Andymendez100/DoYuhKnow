@@ -5,5 +5,14 @@
 
 .findGame {
   margin-top: 5%;
-  max-width: 50%;
+  width: 80%;
+}
+.lobbyBox {
+  height: 40%;
+  margin: 10% 0%;
+}
+.lobbyError {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 20px;
 }

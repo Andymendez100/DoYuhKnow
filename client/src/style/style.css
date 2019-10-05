@@ -78,10 +78,6 @@ body {
   background: #14c9c0;
 }
 
-.textbox {
-  height: 40%;
-}
-
 .messagegame {
   margin-top: 200px;
 }
@@ -106,3 +102,12 @@ body {
 .questiontext {
   color: #14c9c0;
 }
+
+::placeholder {
+  color: gray;
+}
+
+/* #panel {
+  height: 40%;
+  margin: 10% 0%;
+} */

@@ -48,7 +48,7 @@ class Registration extends Component {
     return (
       <div>
         <div className='row'>
-          <div className='col s6 offset-s3 z-depth-1' id='panell'>
+          <div className='col s6 offset-s3 z-depth-1' id='panel'>
             <h4 className='center'>Registration</h4>
             <p className='lead text-muted center'>
               You can simply create a user with us. All you need to do is to
