@@ -96,30 +96,18 @@ body {
 }
 
 ::placeholder {
-  color: gray;
+  color: whitesmoke;
 }
 
 #loginBox {
   height: 50%;
   margin: 10% 0%;
 }
-/* 
-#centerElement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-}​ */
 
-#centerElement {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
+#panel {
+  margin-top: 100px;
+  color: lightblue;
+  background-color: rgba(84, 110, 122, 0.8);
+  padding: 20px;
+  border-radius: 5px;
 }
