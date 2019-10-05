@@ -5,8 +5,38 @@
 
 /* GameMode */
 .start-button {
+  margin-right: 10px;
 }
 
 /* Chat */
 .chat-box {
+}
+
+.chat {
+  height: 100%;
+  margin: 10px 10px 10px 10px;
+  color: whitesmoke;
+}
+
+.chat-btn {
+  margin-top: 0px;
+}
+
+.all-messages {
+  min-height: 100px;
+  margin: 0px 24px;
+  overflow-y: auto;
+}
+
+.form-control,
+.form-control:focus {
+  color: azure;
+}
+
+.form-control::placeholder {
+  color: rgb(40, 182, 187);
+}
+
+.card-title {
+  color: lightblue;
 }

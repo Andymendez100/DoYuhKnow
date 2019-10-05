@@ -54,23 +54,9 @@ body {
   margin-right: 20px;
 }
 
-.card-title {
-  color: lightblue;
-}
-
 .cardpic {
   height: 150px;
   widows: 150px;
-}
-
-.chat {
-  height: 100%;
-  margin: 10px 10px 10px 10px;
-  color: whitesmoke;
-}
-.allmessages {
-  height: 100px;
-  overflow-y: auto;
 }
 
 .header {
@@ -94,8 +80,8 @@ body {
 }
 
 .btn-large {
-  margin-right: 20px;
   margin-top: 20px;
+  padding: 0px 10px;
   border-radius: 10px;
 }
 .questiontext {
