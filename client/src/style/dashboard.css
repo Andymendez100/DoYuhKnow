@@ -72,5 +72,7 @@
 }
 
 #mainPagebutton {
-  width: 40%;
+  max-width: 50%;
+  margin: 10px 20%;
+  float: none;
 }
