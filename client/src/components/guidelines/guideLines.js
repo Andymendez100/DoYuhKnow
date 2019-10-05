@@ -6,7 +6,8 @@ const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
         margin: '10% 20%',
-        boxShadow: '0 5px 10px 0 '
+        backgroundColor: 'rgba(255,255,255,0.14)',
+        boxShadow: 'box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)'
     },
 
     title: {
@@ -16,6 +17,11 @@ const useStyles = makeStyles(theme => ({
     },
     list: {
         listStyleType: 'none',
+    },
+    hr: {
+        backgroundColor: '#fff',
+        borderWidth: '.1em',
+        marginBottom: '50px'
     }
 }));
 
@@ -24,14 +30,17 @@ const guideLines = [
     {
         list: [
             "The purpose of the game KnowMe is to see how well the players know each other.",
-            "This is a 2 player game so one of the players will first have to create a lobby by choosing which quiz they would like to play.",
-            "Once a quiz has been selected PLAYER 2 will then navigate to the join lobby page and join PLAYER 1's lobby",
-            "Now both players will answer the questions given to them.",
-            "To make the game easier for the other player please try to keep the answer to a single word that comes to mind.",
-            "After both players have answered their questions they will then have to answer what the other player would answer for that question.",
-            "Once you have finished it is now time to see how well you know the other player.",
-            "For each answer you have answered correctly you will get a point and whoever has the most points WINS.",
-            "Lastly have fun and dont stress out. If you didnt know the answer to a question before now you know.",
+            "This is a 2 player game and each player will first have to create an account to play.",
+            "After creating an account, players are asked to log in to start playing.",
+            'Once players are logged-in, they can start the game by pressing "start game".',
+            'The first player to press "find game" will become the partyleader, and now will be waiting for the next player.',
+            'The second player to press "find game" can see there is already a player that started a game.',
+            'Now each player can press "start game" and start answering questions.',
+            "Players are given multiple choice questions for a given amount of time for each question.",
+            "Every question has a randomized category, but will be provided to each player.",
+            "Players do not have to answer if they do not know the answer, but their score will be counted as a zero",
+            "Once players are done answering the questions, players will be given their scores at the end.",
+            "Scores are displayed across the board so every player can see and compare who won."
         ]
     }
 ]
@@ -49,6 +58,7 @@ const GuideLines = () => {
             >
                 Guidelines
         </Typography>
+            <hr className={classes.hr}></hr>
             {guideList.map((g, i) => {
                 return (
                     <ul className={classes.list} key={i}>

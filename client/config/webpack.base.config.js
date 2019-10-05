@@ -1,8 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
-const merge = require("webpack-merge");
+const merge = require('webpack-merge');
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -25,26 +25,29 @@ module.exports = env => {
           {
             test: /\.css$/,
             use: [
-              PLATFORM === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-              'css-loader',
-
+              PLATFORM === 'production'
+                ? MiniCssExtractPlugin.loader
+                : 'style-loader',
+              'css-loader'
             ]
           },
           {
             test: /\.(ttf|eot|svg|gif|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            use: [{
-              loader: 'file-loader'
-            }]
+            use: [
+              {
+                loader: 'file-loader'
+              }
+            ]
           }
         ]
       },
       devServer: {
         proxy: {
-          "/api/*": {
-            target: "http://localhost:3000/",
-            secure: "true"
+          '/api/*': {
+            target: 'http://localhost:3000/',
+            secure: 'true'
           }
-        },
+        }
       },
       plugins: [
         new HtmlWebpackPlugin({
@@ -54,9 +57,9 @@ module.exports = env => {
         new webpack.DefinePlugin({
           'process.env.VERSION': JSON.stringify(env.VERSION),
           'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
-        }),
-        new CopyWebpackPlugin([{ from: 'src/static' }]),
-      ],
+        })
+        //new CopyWebpackPlugin([{ from: 'src/static' }])
+      ]
     }
-  ])
+  ]);
 };

@@ -121,13 +121,17 @@ class GameQuiz extends Component {
         if (this.state.questionnumber === 10 && this.state.timer === 0) {
 
             return (
-                <div className="container">
-                    <div className="textbox">
-                        <h1 className="center">END OF THE QUIZ</h1>
-                        <h4 className="center">Scoreboard</h4>
-                        <ul className="list-group">
-                            {this.renderScores()}
-                        </ul>
+                <div>
+                    <div className="row">
+                        <div className="col s6 z-depth-1" id="scoreboard">
+                            <h1 className="center">END OF THE QUIZ</h1>
+                            <hr></hr>
+                            <h4 className="center">Scoreboard</h4>
+                            <ul className="list-group">
+                                {this.renderScores()}
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             );
@@ -136,27 +140,29 @@ class GameQuiz extends Component {
         else if (!this.state.error) {
             return (
                 <div className="container">
-                    <h6 className="center">{`Your points ${this.state.points}`}</h6>
-                    <h5 className="center">Category: {this.state.category}</h5>
-                    <h6 className="center">{"Your answer: " + this.state.your_answer}</h6>
-                    <h6 className="center">Corect answer is: {' '} {this.state.your_answer ? this.state.correct_answer : ''}</h6>
-                    <div className="something jumbotron">
-                        <h3 className="questiontext center">{this.state.question}</h3>
-                    </div>
+                    <div className="quiz">
+                        <h5 className="center">Category: {this.state.category}</h5>
+                        <hr></hr>
+                        <h6 className="center">{`Your points ${this.state.points}`}</h6>
+                        <h6 className="center">{"Your answer: " + this.state.your_answer}</h6>
+                        <h6 className="center">Correct answer is: {' '} {this.state.your_answer ? this.state.correct_answer : ''}</h6>
+                        <div className="something jumbotron">
+                            <h3 className="questiontext center">{this.state.question}</h3>
+                        </div>
 
-                    <div><Timer data={this.updateTimer.bind(this)} number={this.updateQuestionNumber.bind(this)} score={this.scoreRanks.bind(this)} matchtoken={this.state.matchtoken} /></div>
+                        <div><Timer data={this.updateTimer.bind(this)} number={this.updateQuestionNumber.bind(this)} score={this.scoreRanks.bind(this)} matchtoken={this.state.matchtoken} /></div>
 
-                    <div>
-                        <div className="row">
-                            <button className="btn-large col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[0]}>{this.state.answers[0]}</button>
-                            <button className="btn-large col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[1]}>{this.state.answers[1]}</button>
-                            <div className="w-100"></div>
-                            <button className="btn-large col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[2]}>{this.state.answers[2]}</button>
-                            <button className="btn-large col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[3]}>{this.state.answers[3]}</button>
+                        <div>
+                            <div className="row">
+                                <button className="btn-large btn-primary col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[0]}>{this.state.answers[0]}</button>
+                                <button className="btn-large btn-primary col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[1]}>{this.state.answers[1]}</button>
+                                <div className="w-100"></div>
+                                <button className="btn-large btn-primary col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[2]}>{this.state.answers[2]}</button>
+                                <button className="btn-large btn-primary col" disabled={this.state.your_answer} onClick={this.buttonClick} id={this.state.answers[3]}>{this.state.answers[3]}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             );
         } else if (this.state.error) {
             return (
