@@ -228,8 +228,8 @@ function PersistentDrawerLeft(props) {
             {theme.direction === 'ltr' ? (
               <ChevronLeftIcon />
             ) : (
-              <ChevronRightIcon />
-            )}
+                <ChevronRightIcon />
+              )}
           </IconButton>
         </div>
         {/* Side Item List */}
