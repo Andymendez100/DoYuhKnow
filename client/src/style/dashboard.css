@@ -63,6 +63,6 @@
   height: -webkit-fill-available;
 }
 
-.mb-8 {
-  margin-bottom: 5rem;
+#mainPagebutton {
+  width: 40%;
 }
