@@ -54,9 +54,9 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className='row mb-5 wrapper'>
+      <div className='row mb-8'>
         <div className='col s12'>
-          <div className='card chat blue-grey darken-1'>
+          <div className='card chat wrapper'>
             <div className='card-body'>
               <span className='card-title'>Group Chat</span>
             </div>
