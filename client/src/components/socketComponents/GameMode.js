@@ -12,26 +12,12 @@ class GameMode extends Component {
 
   render() {
     return (
-      <div className='col'>
-        <div className='card gamemode'>
-          <div className='header'>
-            <h1 className='card-title center'>Quizzes Here</h1>
-          </div>
-
-          <div className='card-content'>
-            <p>Are you ready to play a round?</p>
-          </div>
-
-          <div className='card-action'>
-            <button
-              className='btn btn-primary form-control'
-              onClick={this.start.bind(this)}
-            >
-              Start Game
-            </button>
-          </div>
-        </div>
-      </div>
+      <button
+        className='btn btn-large indigo darken-1 start-button form-control'
+        onClick={this.start.bind(this)}
+      >
+        Play Game
+      </button>
     );
   }
 }
