@@ -48,6 +48,10 @@
   overflow-y: auto;
 }
 
+.mb-8 {
+  margin-bottom: 5.5rem;
+}
+
 .form-control,
 .form-control:focus {
   color: azure;
