@@ -17,7 +17,7 @@ class Dashboard extends Component {
               Welcome,{' ' + this.props.username}
             </h1>
           </div>
-          <div className='col s12 m6 valign-wrapper'>
+          <div className='col s12 m6 valign-wrapper button-fix'>
             <GameMode />
           </div>
         </div>
