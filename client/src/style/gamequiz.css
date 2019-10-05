@@ -1,17 +1,10 @@
 .questionbox {
   background-color: #546e7a;
 }
-.something {
-  font-size: 24px;
-  font-weight: 300;
-  /* color: whitesmoke; */
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  /* margin-top: 10px; */
-  border-radius: 5px;
-  background-color: rgba(84, 110, 122, 0.8);
-}
 .jumbotron {
-  padding: 1rem;
+  padding: 2rem;
+  background-color: rgba(84, 110, 122, 0.8);
+  border-radius: 0.3 rem;
 }
 #scoreboard {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -24,9 +17,12 @@
 }
 #scoreboard-title {
   font-weight: 300;
-  color: whitesmoke;
+  color: whitesmoke !important;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   margin: 20px 20%;
+}
+#scoreboard h3 {
+  color: lightblue;
 }
 h4 {
   font-weight: 300;
@@ -39,7 +35,7 @@ h2 {
 }
 .list-group {
   border-top: 1px solid #455a64;
-  color: lightblue;
+  color: whitesmoke;
   list-style-type: none;
 }
 .list-group-item {
@@ -47,12 +43,12 @@ h2 {
   border-width: 0;
   background-color: transparent;
 }
-.btn-large {
+/* .btn-large {
   margin: 10px;
   border-radius: 5px;
-}
+} */
 .quiz {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .questiontext {
   color: whitesmoke;

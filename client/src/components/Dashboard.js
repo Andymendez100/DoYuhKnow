@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Chat from './socketComponents/Chat';
 import GameMode from './socketComponents/GameMode';
-import '../style/Dashboard.css';
+import '../style/dashboard.css';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className='container center-align test'>
+      <div className='container center-align dashContainer'>
         <div className='row mt-4'>
           <div className='col s12 m6'>
             <h1 className='display-4 wel-message'>

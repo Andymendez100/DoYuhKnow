@@ -24,10 +24,11 @@ class Landing extends Component {
           <div className='row'>
             <div className='col'>
               <div className='one-line-header'>
-                <p>Quiz Game for People</p>
+                <p>Are you smarter then your friends?</p>
               </div>
               <div className='mission-statement'>
-                <p> How well do you really know each other?</p>
+                <p> You think you're smart? Play this to double check...</p>
+                <p>Play now to find out!</p>
               </div>
               <br />
               <br />
@@ -38,7 +39,6 @@ class Landing extends Component {
                 component={Link}
                 to='register'
               >
-
                 Sign Up
               </Button>
               <br />
@@ -50,7 +50,6 @@ class Landing extends Component {
                 component={Link}
                 to='login'
               >
-
                 Login
               </Button>
             </div>

@@ -40,7 +40,7 @@ class Chat extends Component {
   renderMessages() {
     return this.state.messages.map((message, index) => {
       return (
-        <div key={index}>
+        <div key={index} >
           {' '}
           {
             <b>
@@ -53,16 +53,17 @@ class Chat extends Component {
     });
   }
 
+
   render() {
     return (
       <div className='row mb-8'>
         <div className='col s12'>
-          <div className='card chat wrapper'>
+          <div className='card chat wrapper' id='test'>
             <div className='card-body'>
               <span className='card-title'>Group Chat</span>
             </div>
 
-            <div className='all-messages left-align'>
+            <div className='all-messages left-align '>
               {this.renderMessages()}
             </div>
             <form onSubmit={this.sendMessage.bind(this)}>
