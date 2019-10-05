@@ -28,7 +28,6 @@ class Landing extends Component {
               </div>
               <div className='mission-statement'>
                 <p> You think you're smart? Play this to double check...</p>
-                <p>Play now to find out!</p>
               </div>
               <br />
               <br />
