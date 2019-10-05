@@ -4,7 +4,7 @@ import Dashboard from './Dashboard';
 import { connect } from 'react-redux';
 import { fetchCurrentUser } from '../actions/index';
 import { Button } from '@material-ui/core';
-import '../style/dashboard.css';
+import '../style/landing.css';
 import logo from '../static/Images/KnowMe.png';
 
 class Landing extends Component {
@@ -34,10 +34,11 @@ class Landing extends Component {
               <Button
                 variant='contained'
                 color='primary'
+                id='mainPageButton'
                 component={Link}
                 to='register'
               >
-                {' '}
+
                 Sign Up
               </Button>
               <br />
@@ -45,11 +46,12 @@ class Landing extends Component {
               <Button
                 variant='contained'
                 color='primary'
+                id='mainPageButton'
                 component={Link}
                 to='login'
               >
-                {' '}
-                Login{' '}
+
+                Login
               </Button>
             </div>
           </div>

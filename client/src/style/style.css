@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+html {
+  height: 100%;
+}
+
 /* Added animated clouds to bg*/
 body {
   width: 100%;
@@ -19,6 +25,10 @@ body {
     background-position: 100% 0;
   }
 }
+
+/* .container {
+  height: 70%;
+} */
 
 .nav-wrapper {
   background-color: #455a64;
@@ -52,34 +62,13 @@ body {
   margin-right: 20px;
 }
 
-.card-title {
-  color: white;
-}
-
 .cardpic {
   height: 150px;
   widows: 150px;
 }
 
-.gamemode {
-  width: 400px;
-}
-
-.chat {
-  height: 100%;
-  margin: 10px 10px 10px 10px;
-}
-.allmessages {
-  height: 100px;
-  overflow-y: auto;
-}
-
 .header {
   background: #14c9c0;
-}
-
-.textbox {
-  height: 40%;
 }
 
 .messagegame {
@@ -91,18 +80,24 @@ body {
   height: 100px;
 }
 
-.something {
-  margin-top: 50px;
-  border: 1px solid #455a64;
+.btn-large {
+  padding: 0px 10px;
   border-radius: 10px;
-  background: url(https://www.ericroy.ca/wp-content/uploads/2017/09/question-marks-background-5048.jpeg);
 }
 
-.btn-large {
-  margin-right: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
+::placeholder {
+  color: whitesmoke;
 }
-.questiontext {
-  color: #14c9c0;
+
+#loginBox {
+  height: 50%;
+  margin: 10% 0%;
+}
+
+#panel {
+  margin-top: 100px;
+  color: lightblue;
+  background-color: rgba(84, 110, 122, 0.8);
+  padding: 20px;
+  border-radius: 5px;
 }

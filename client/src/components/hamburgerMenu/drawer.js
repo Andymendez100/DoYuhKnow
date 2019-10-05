@@ -24,7 +24,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 // Images
-import logo1 from '../../static/Images/KnowMeResize.png';
+import logo1 from '../../static/Images/KnowMe-copy.png';
 
 const drawerWidth = 240;
 
@@ -57,7 +57,8 @@ const useStyles = makeStyles(theme => ({
     flexShrink: 0
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
+    backgroundColor: 'rgba(255, 255, 255, 0.1) '
   },
   drawerHeader: {
     display: 'flex',
@@ -97,6 +98,10 @@ function PersistentDrawerLeft(props) {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  const logoutUser = () => {
+
+    location.href = '/api/logout';
+  }
 
   const renderingContent = () => {
     switch (props.auth) {
@@ -182,8 +187,8 @@ function PersistentDrawerLeft(props) {
               </MenuItem>
             </MenuList>
             <MenuList>
-              <MenuItem onClick={handleDrawerClose}>
-                <a href="/api/logout">Log Out</a>
+              <MenuItem onClick={handleDrawerClose, logoutUser}>
+                Log Out
               </MenuItem>
             </MenuList>
           </div>
@@ -228,8 +233,8 @@ function PersistentDrawerLeft(props) {
             {theme.direction === 'ltr' ? (
               <ChevronLeftIcon />
             ) : (
-              <ChevronRightIcon />
-            )}
+                <ChevronRightIcon />
+              )}
           </IconButton>
         </div>
         {/* Side Item List */}

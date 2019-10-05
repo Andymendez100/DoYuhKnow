@@ -1,45 +1,38 @@
 .nav-wrapper,
 .page-footer {
-    background-color: #455a64;
+  background-color: #455a64;
 }
 .btn-lg {
-    color: #fff;
-    background-color: #455a64;
-    margin-right: 10px;
+  color: #fff;
+  background-color: #455a64;
+  margin-right: 10px;
 }
 .brand-logo {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 .offset-s3 {
-    margin-top: 50px;
-    margin-right: 350px;
+  margin-top: 50px;
+  margin-right: 350px;
 }
 .password,
 .username {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.card-title {
-    color: #fff;
-}
-.cardpic {
-    height: 150px;
-    widows: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .gamemode {
-    width: 1000px;
+  width: 1000px;
 }
 .chat {
-    height: 40%;
-    margin-left: 10px;
+  height: 40%;
+  margin-left: 10px;
 }
 .allmessages {
-    height: 100px;
-    overflow-y: auto;
+  height: 100px;
+  overflow-y: auto;
 }
 .header {
-    background: #14c9c0;
+  background: #14c9c0;
 }
 .textbox {
-    height: 40%;
+  height: 40%;
 }

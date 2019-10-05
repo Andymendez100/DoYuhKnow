@@ -1,0 +1,18 @@
+.gameStartContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.findGame {
+  margin-top: 5%;
+  width: 80%;
+}
+.lobbyBox {
+  height: 40%;
+  margin: 10% 0%;
+}
+.lobbyError {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 20px;
+}

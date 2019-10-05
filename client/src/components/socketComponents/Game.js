@@ -4,6 +4,7 @@ import io from 'socket.io-client';
 import { connect } from 'react-redux';
 import { fetchCurrentUser } from '../../actions/index';
 import { withRouter } from 'react-router-dom';
+import '../../style/gamestart.css';
 
 
 class Game extends Component {
@@ -37,7 +38,7 @@ class Game extends Component {
                 if (!this.props.auth) {
                     this.setState({ message: "Please login to play" });
                 } else {
-                    this.setState({ message: "Click find game, to play" })
+                    this.setState({ message: "Click find game to play" })
                 }
             });
     }
@@ -61,25 +62,23 @@ class Game extends Component {
 
             let startgameBtn;
             if (this.props.auth.username === this.state.partyleader) {
-                startgameBtn = <button className="btn btn-primary btn-lg center" onClick={this.start.bind(this)}>Start Game</button>
+                startgameBtn = <button className='btn btn-medium indigo darken-1 center' style={{ margin: '10px' }} onClick={this.start.bind(this)}>Start Game</button>
             }
 
 
             return (
-                <div className="container">
-                    <div className="textbox">
-                        <h4 className="center">{this.state.message}</h4>
-                        <h6 className="center"><b>Partyleader: {this.state.partyleader}</b></h6>
-                    </div>
-
-                    <div className="row 2 center">
-                        {startgameBtn}
-                        <button className="btn btn-primary btn-lg center" onClick={this.find.bind(this)}>Find Game</button>
-                        <h6 className="right">{"Amount of Players in this game: " + this.state.players}</h6>
-                    </div>
-
-                    <div className="red-text">{this.state.errormsg}</div>
-                </div>
+                <div className="container gameStartContainer ">
+                    < div className="lobbyBox z-depth-1" id="panel" >
+                        <h4 className="center" >{this.state.message}</h4>
+                        <h6 className="center"><b> Partyleader: {this.state.partyleader}</b></h6>
+                        <div className=" center findGame">
+                            {startgameBtn}
+                            <button className='btn btn-medium indigo darken-1 center' style={{ margin: '10px' }} onClick={this.find.bind(this)}>Find Game</button>
+                            <h6 className="right">{"Amount of Players in this game: " + this.state.players}</h6>
+                        </div>
+                        <div className="red-text lobbyError">{this.state.errormsg}</div>
+                    </div >
+                </div >
             )
         }
     }
