@@ -92,7 +92,27 @@ body {
   color: gray;
 }
 
-/* #panel {
-  height: 40%;
+#loginBox {
+  height: 50%;
   margin: 10% 0%;
-} */
+}
+/* 
+#centerElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}​ */
+
+#centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
