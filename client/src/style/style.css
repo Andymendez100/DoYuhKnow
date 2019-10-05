@@ -55,7 +55,7 @@ body {
 }
 
 .card-title {
-  color: white;
+  color: lightblue;
 }
 
 .cardpic {
@@ -70,6 +70,7 @@ body {
 .chat {
   height: 100%;
   margin: 10px 10px 10px 10px;
+  color: whitesmoke;
 }
 .allmessages {
   height: 100px;

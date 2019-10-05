@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Chat from './socketComponents/Chat';
 import GameMode from './socketComponents/GameMode';
 
@@ -9,17 +9,17 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className='container'>
         <div className='row'>
-          <div className='col s3'>
-            <h1 className='display-3'>Welcome,{' ' + this.props.username}</h1>
+          <div className='col s12 m6'>
+            <h1 className='display-4'>Welcome,{' ' + this.props.username}</h1>
           </div>
-          <div className='col s3'>
-            <Chat username={this.props.username} />
+          <div className='col s12 m6'>
             <GameMode />
           </div>
         </div>
-      </Fragment>
+        <Chat username={this.props.username} />
+      </div>
     );
   }
 }
