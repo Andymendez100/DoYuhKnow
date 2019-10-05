@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 
+html {
+  height: 100%;
+}
+
 /* Added animated clouds to bg*/
 body {
   width: 100%;
@@ -20,6 +24,10 @@ body {
   to {
     background-position: 100% 0;
   }
+}
+
+.container {
+  height: 70%;
 }
 
 .nav-wrapper {
@@ -80,7 +88,6 @@ body {
 }
 
 .btn-large {
-  margin-top: 20px;
   padding: 0px 10px;
   border-radius: 10px;
 }
