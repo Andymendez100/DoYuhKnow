@@ -27,7 +27,7 @@ class Landing extends Component {
                 <p>Quiz Game for People</p>
               </div>
               <div className='mission-statement'>
-                <p> How well do you really know each other?</p>
+                <p> You think you're smart? Play this to double check...</p>
               </div>
               <br />
               <br />
