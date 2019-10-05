@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Chat from './socketComponents/Chat';
 import GameMode from './socketComponents/GameMode';
-import './style/Dashboard.css';
+import '../style/dashboard.css';
 
 class Dashboard extends Component {
   constructor(props) {
