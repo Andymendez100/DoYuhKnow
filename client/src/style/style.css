@@ -26,9 +26,9 @@ body {
   }
 }
 
-.container {
+/* .container {
   height: 70%;
-}
+} */
 
 .nav-wrapper {
   background-color: #455a64;
@@ -80,19 +80,9 @@ body {
   height: 100px;
 }
 
-.something {
-  margin-top: 50px;
-  border: 1px solid #455a64;
-  border-radius: 10px;
-  background: url(https://www.ericroy.ca/wp-content/uploads/2017/09/question-marks-background-5048.jpeg);
-}
-
 .btn-large {
   padding: 0px 10px;
   border-radius: 10px;
-}
-.questiontext {
-  color: #14c9c0;
 }
 
 ::placeholder {

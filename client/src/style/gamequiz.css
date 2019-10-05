@@ -1,15 +1,14 @@
 .questionbox {
-  height: 100px;
   background-color: #546e7a;
 }
 .something {
   font-size: 24px;
   font-weight: 300;
-  color: lightblue;
+  /* color: whitesmoke; */
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   /* margin-top: 10px; */
   border-radius: 5px;
-  background-color: 'rgba(84, 110, 122, .8)';
+  background-color: rgba(84, 110, 122, 0.8);
 }
 .jumbotron {
   padding: 1rem;
@@ -20,12 +19,12 @@
   text-align: center;
   padding: 10px;
   margin: 50px 20%;
-  background-color: 'rgba(84, 110, 122, .8)';
+  background-color: rgba(84, 110, 122, 0.8);
   border-radius: 5px;
 }
 #scoreboard-title {
   font-weight: 300;
-  color: lightblue !important;
+  color: whitesmoke;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   margin: 20px 20%;
 }
@@ -56,6 +55,5 @@ h2 {
   padding-top: 20px;
 }
 .questiontext {
-  color: lightblue;
-  background-color: none;
+  color: whitesmoke;
 }
