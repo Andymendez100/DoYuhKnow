@@ -10,19 +10,24 @@
   overflow: hidden;
   font-size: 22px;
   font-family: 'Finger Paint';
-  color: transparent;
   backface-visibility: hidden;
+}
+
+.footer a {
+  color: transparent;
 }
 
 .footer span {
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 5s 3s both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .footer span:nth-child(even) {
   animation-name: smoky-mirror;
 }
 @keyframes smoky {
-  60% {
+  55% {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
@@ -35,7 +40,7 @@
   }
 }
 @keyframes smoky-mirror {
-  60% {
+  55% {
     text-shadow: 0 0 40px whitesmoke;
   }
   to {
