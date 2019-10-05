@@ -30,9 +30,10 @@ class Login extends Component {
 
     return (
       <div >
-        <h2 className="center">Login</h2>
         <div className="row">
           <div className="col s6 offset-s3 z-depth-1" id="panel">
+            <h2 className="center" style={{ color: 'lightblue', marginBottom: '10px' }}>Login</h2>
+
             <p className="lead center">
               Have you already created a account with us?
 

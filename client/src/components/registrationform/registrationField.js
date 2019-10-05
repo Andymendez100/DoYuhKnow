@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default ({input, label, type, meta: {error, touched}}) => {
-    return(
+export default ({ input, label, type, meta: { error, touched } }) => {
+    return (
         <div>
-            <label>{label}</label>
-            <input 
+            <label style={{ color: 'whitesmoke' }}>{label}</label>
+            <input
                 {...input} type={type}
             />
             <div className="red-text">

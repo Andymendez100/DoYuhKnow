@@ -6,22 +6,19 @@ const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
         margin: '10% 20%',
-        backgroundColor: 'rgba(255,255,255,0.14)',
-        boxShadow: 'box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)'
+        backgroundColor: 'rgba(84, 110, 122, .8)',
     },
 
     title: {
-        letterSpacing: '8px',
+        color: 'lightblue',
         textAlign: "center",
         paddingBottom: '10px',
+        marginBottom: '10px'
     },
     list: {
         listStyleType: 'none',
-    },
-    hr: {
-        backgroundColor: '#fff',
-        borderWidth: '.1em',
-        marginBottom: '50px'
+        color: 'whitesmoke'
+
     }
 }));
 
@@ -58,7 +55,6 @@ const GuideLines = () => {
             >
                 Guidelines
         </Typography>
-            <hr className={classes.hr}></hr>
             {guideList.map((g, i) => {
                 return (
                     <ul className={classes.list} key={i}>

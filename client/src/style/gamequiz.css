@@ -10,7 +10,7 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #546e7a; 
+    background-color: 'rgba(84, 110, 122, .8)';
     
 }
 .jumbotron {
@@ -22,7 +22,7 @@
     text-align: center;
     padding: 10px;
     margin: 50px 20%;
-    background-color: #546e7a;      
+    background-color: 'rgba(84, 110, 122, .8)';
     border-radius: 5px;
 }
 #scoreboard-title {
