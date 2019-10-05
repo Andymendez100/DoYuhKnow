@@ -6,16 +6,18 @@ const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
         margin: '10% 20%',
-        boxShadow: '0 5px 10px 0 '
+        backgroundColor: 'rgba(84, 110, 122, .8)',
     },
 
     title: {
-        letterSpacing: '8px',
-        textAlign: "center",
+        color: 'lightblue',
+        textAlign: 'center',
         paddingBottom: '10px',
+        marginBottom: '10px'
     },
     list: {
-        listStyleType: 'none',
+        color: 'whitesmoke',
+        listStyleType: 'none'
     }
 }));
 
