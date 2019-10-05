@@ -101,3 +101,9 @@ body {
   padding: 20px;
   border-radius: 5px;
 }
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: whitesmoke !important;
+}

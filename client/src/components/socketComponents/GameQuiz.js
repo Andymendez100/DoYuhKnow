@@ -82,11 +82,7 @@ class GameQuiz extends Component {
   buttonClick(e) {
     this.setState({ your_answer: e.target.id });
     if (this.state.correct_answer === e.target.id) {
-      if (this.state.points === 0) {
-        this.setState({ points: this.state.timer });
-      } else {
-        this.setState({ points: this.state.points * this.state.timer });
-      }
+      this.setState({ points: this.state.points + 1 });
     }
   }
   scoreRanks() {
