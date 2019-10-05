@@ -32,24 +32,26 @@ class Landing extends Component {
               <br />
               <br />
               <Button
+                className="btn btn-large indigo darken-1 col"
                 variant='contained'
-                color='primary'
+                id='mainPageButton'
+                size="small"
                 component={Link}
                 to='register'
               >
-                {' '}
                 Sign Up
               </Button>
               <br />
               <br />
               <Button
+                className="btn btn-large indigo darken-1 col"
                 variant='contained'
-                color='primary'
+                id='mainPageButton'
+                size="small"
                 component={Link}
                 to='login'
               >
-                {' '}
-                Login{' '}
+                Login
               </Button>
             </div>
           </div>

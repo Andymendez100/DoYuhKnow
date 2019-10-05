@@ -29,12 +29,11 @@ class Login extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div>
+      <div >
+        <h2 className="center">Login</h2>
         <div className="row">
-
           <div className="col s6 offset-s3 z-depth-1" id="panel">
-            <h4 className="center">Login</h4>
-            <p className="lead text-muted center">
+            <p className="lead center">
               Have you already created a account with us?
 
               Then you can simply log in with your Username and Password.
@@ -62,7 +61,7 @@ class Login extends Component {
               <div>
                 <button
                   type="submit"
-                  className="btn btn-primary btn-lg right">
+                  className="btn btn-large indigo darken-1 right">
                   Login
                 </button>
               </div>

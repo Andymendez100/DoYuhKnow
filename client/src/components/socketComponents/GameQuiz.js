@@ -123,7 +123,7 @@ class GameQuiz extends Component {
 
             return (
                 <div className="container">
-                    <h2 className="center">END OF THE QUIZ</h2>
+                    <h3 className="center">END OF THE QUIZ</h3>
                     <div className="row">
                         <div className="col s6 z-depth-1" id="scoreboard">
                             <h3 className="center" id="scoreboard-title">Scoreboard</h3>

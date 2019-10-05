@@ -85,4 +85,70 @@ body {
 .messagegame {
   margin-top: 200px;
 }
+/* 
+.questionbox {
+  background-color: #455a64;
+  height: 100px;
+} */
 
+/* .something {
+  margin-top: 50px;
+  border: 1px solid #455a64;
+  border-radius: 10px;
+  background: url(https://www.ericroy.ca/wp-content/uploads/2017/09/question-marks-background-5048.jpeg);
+} */
+
+.btn-large {
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/* .questiontext {
+  color: #14c9c0;
+} */
+
+::placeholder {
+  color: lightblue;
+}
+
+#loginBox {
+  height: 50%;
+  margin: 10% 0%;
+  padding: 20px;  
+}
+/* 
+#centerElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}​ */
+
+#centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+#panel {
+  margin-top: 10px;
+  color: lightblue;
+  background-color: #546e7a; 
+  padding: 20px;
+  border-radius: 5px;     
+  
+}
+.lead {
+  color: lightblue;
+}
+#mainPageButton {
+  margin: 10px;
+  padding: 10px;
+}

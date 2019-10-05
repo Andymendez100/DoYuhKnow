@@ -47,10 +47,10 @@ class Registration extends Component {
 
     return (
       <div>
+        <h2 className='center'>Registration</h2>
         <div className='row'>
-          <div className='col s6 offset-s3 z-depth-1' id='panell'>
-            <h4 className='center'>Registration</h4>
-            <p className='lead text-muted center'>
+          <div className='col s6 offset-s3 z-depth-1' id='panel'>
+            <p className='lead center'>
               You can simply create a user with us. All you need to do is to
               fill out all of the credentials. Easy steps before be able to play
               games on our platform.
@@ -61,7 +61,7 @@ class Registration extends Component {
 
               <div className='red-text'>{this.state.regError}</div>
               <div>
-                <button type='submit' className='btn btn-primary btn-lg right'>
+                <button type='submit' className='btn btn-large indigo darken-1 right'>
                   Login
                 </button>
               </div>
