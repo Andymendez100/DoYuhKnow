@@ -17,6 +17,13 @@
   color: transparent;
 }
 
+.footer a:hover,
+.footer a:visited,
+.footer a:link,
+.footer a:active {
+  text-decoration: none;
+}
+
 .footer span {
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 5s 3s both;
