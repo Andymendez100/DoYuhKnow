@@ -15,7 +15,7 @@ class Landing extends Component {
   renderComponent() {
     if (!this.props.auth) {
       return (
-        <div className='container center-align vertical-center'>
+        <div className='container sizingContainer center-align vertical-center'>
           <div className='row'>
             <div className='col s12'>
               <img className='logo' src={logo} />
@@ -24,7 +24,7 @@ class Landing extends Component {
           <div className='row'>
             <div className='col'>
               <div className='one-line-header'>
-                <p>Are you smarter then your friends?</p>
+                <p>Are you smarter than your friends?</p>
               </div>
               <div className='mission-statement'>
                 <p> Play this to double check...</p>

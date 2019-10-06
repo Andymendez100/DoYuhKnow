@@ -32,7 +32,7 @@ class Login extends Component {
       <div>
         <div className="row">
 
-          <div className="col s6 offset-s3 z-depth-1" id="panel">
+          <div className="col s6 offset-s3 z-depth-1 sizingContainer" id="panel">
             <h4 className="center" style={{ color: 'lightblue' }}>Login</h4>
             <p className="lead center" style={{ color: 'whitesmoke' }}>
               Have you already created a account with us?
