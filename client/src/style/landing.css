@@ -25,3 +25,9 @@
   font-size: 1.35rem;
   font-weight: bold;
 }
+.MuiButton-label {
+  font-size: 15px;
+  color: white;
+  padding: 0 28px;
+  letter-spacing: .5px;
+}
