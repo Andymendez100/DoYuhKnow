@@ -62,7 +62,7 @@ class Registration extends Component {
               <div className='red-text'>{this.state.regError}</div>
               <div>
                 <button type='submit' className='btn btn-large indigo darken-1 right'>
-                  Login
+                  Sign Up
                 </button>
               </div>
             </form>

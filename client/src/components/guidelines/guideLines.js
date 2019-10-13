@@ -33,7 +33,7 @@ const guideLines = [
             "After the minimum amount of players(2) have joined the lobby the host will have to start game.",
             "Once the game started you will be required to select an answer for the multiple choice question within the allotted time.",
             "For each question you have answered correctly you will get a point and whoever has the most points WINS.",
-            "Lastly have fun and dont stress out. If you didnt know the answer to a question before now you know.",
+            "Lastly have fun and dont stress out. If you didnt know the answer to a question before now you know."
         ]
     }
 ]

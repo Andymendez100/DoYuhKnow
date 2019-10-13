@@ -16,7 +16,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "clsx": "^1.0.4",
-    "concurrently": "^3.6.0",
+    "concurrently": "^5.0.0",
     "cors": "^2.8.5",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
