@@ -95,11 +95,14 @@ body {
 }
 
 #panel {
-  margin-top: 100px;
   color: lightblue;
   background-color: rgba(84, 110, 122, 0.8);
   padding: 20px;
   border-radius: 5px;
+}
+
+.sizingContainer {
+  height: 70%;
 }
 
 input:-internal-autofill-selected {

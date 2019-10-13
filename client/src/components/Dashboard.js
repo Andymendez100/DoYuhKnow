@@ -10,7 +10,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className='container center-align dashContainer'>
+      <div className='container center-align sizingContainer'>
         <div className='row mt-4'>
           <div className='col s12 m6'>
             <h1 className='display-4 wel-message'>

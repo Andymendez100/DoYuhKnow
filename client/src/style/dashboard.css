@@ -74,9 +74,6 @@
 #mainPagebutton {
   width: 40%;
 }
-.dashContainer {
-  height: 70%;
-}
 
 ::-webkit-scrollbar {
   width: 6px;
