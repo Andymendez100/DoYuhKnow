@@ -21,9 +21,9 @@
   background-color: rgba(84, 110, 122, 0.8);
 }
 
-.card .card-action {
+/* .card .card-action {
   background-color: transparent;
-}
+} */
 
 .chat-btn {
   margin-top: 0px;
@@ -31,8 +31,8 @@
 
 .card-body,
 .card-action {
-  position: absolute !important;
-  width: 100%;
+  /* position: absolute !important; */
+  /* width: 100%; */
 }
 
 .card-action {
@@ -71,8 +71,8 @@
   height: -webkit-fill-available;
 }
 
-#mainPagebutton {
+/* #mainPagebutton {
   max-width: 50%;
   margin: 10px 20%;
   float: none;
-}
+} */

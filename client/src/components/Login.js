@@ -29,7 +29,7 @@ class Login extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div >
+      <div>
         <div className="row">
           <div className="col s6 offset-s3 z-depth-1" id="panel">
             <h2 className="center" style={{ color: 'lightblue', marginBottom: '10px' }}>Login</h2>

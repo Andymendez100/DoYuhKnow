@@ -1,6 +1,6 @@
 
 .questionbox {
-    height: 100px;
+    /* height: 100px; */
     background-color: #546e7a;
 } 
 .something {
@@ -8,7 +8,7 @@
     font-weight: 300;
     color: lightblue;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 5px;
     background-color: 'rgba(84, 110, 122, .8)';
     
