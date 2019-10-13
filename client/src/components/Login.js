@@ -31,10 +31,10 @@ class Login extends Component {
     return (
       <div>
         <div className="row">
-          <div className="col s6 offset-s3 z-depth-1" id="panel">
-            <h2 className="center" style={{ color: 'lightblue', marginBottom: '10px' }}>Login</h2>
 
-            <p className="lead center">
+          <div className="col s6 offset-s3 z-depth-1 sizingContainer" id="panel">
+            <h4 className="center" style={{ color: 'lightblue' }}>Login</h4>
+            <p className="lead center" style={{ color: 'whitesmoke' }}>
               Have you already created a account with us?
 
               Then you can simply log in with your Username and Password.

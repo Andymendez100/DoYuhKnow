@@ -49,9 +49,8 @@ class Registration extends Component {
       <div>
         <div className='row'>
           <div className='col s6 offset-s3 z-depth-1' id='panel'>
-            <h2 className='center' style={{ color: 'lightblue' }}>Registration</h2>
-
-            <p className='lead center'>
+            <h4 className='center' style={{ color: 'lightblue' }}>Registration</h4>
+            <p className='lead center' style={{ color: 'whitesmoke' }}>
               You can simply create a user with us. All you need to do is to
               fill out all of the credentials. Easy steps before be able to play
               games on our platform.

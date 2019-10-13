@@ -95,20 +95,10 @@ body {
   height: 100px;
 } */
 
-/* .something {
-  margin-top: 50px;
-  border: 1px solid #455a64;
-  border-radius: 10px;
-  background: url(https://www.ericroy.ca/wp-content/uploads/2017/09/question-marks-background-5048.jpeg);
-} */
-
 .btn-large {
   padding: 0px 10px;
   border-radius: 10px;
 }
-/* .questiontext {
-  color: #14c9c0;
-} */
 
 ::placeholder {
   color: whitesmoke;
@@ -119,34 +109,20 @@ body {
   margin: 10% 0%;
   padding: 20px;  
 }
-/* 
-#centerElement {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-}​ */
-
-/* #centerElement {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
-} */
 
 #panel {
-  margin-top: 100px;
   color: lightblue;
-  background-color: rgba(84, 110, 122, .8);
+  background-color: rgba(84, 110, 122, 0.8);
   padding: 20px;
-  border-radius: 5px;    
-  
+  border-radius: 5px;
 }
-.lead {
-  color: whitesmoke;
+
+.sizingContainer {
+  height: 70%;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: whitesmoke !important;
 }

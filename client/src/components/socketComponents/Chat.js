@@ -20,6 +20,8 @@ class Chat extends Component {
 
     this.socket.on('onRecieve_Message', function(data) {
       Addingmsg(data);
+      const test = document.getElementById('test');
+      test.scrollTop = test.scrollTop + 1000;
     });
 
     const Addingmsg = data => {
@@ -27,7 +29,8 @@ class Chat extends Component {
     };
   }
 
-  sendMessage() {
+  sendMessage(e) {
+    e.preventDefault();
     this.socket.emit('onSending_Message', {
       username: this.state.username,
       message: this.state.message
@@ -54,32 +57,34 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className='row mb-8'>
-        <div className='col s12'>
-          <div className='card chat wrapper'>
-            <div className='card-body'>
-              <span className='card-title'>Group Chat</span>
+      <div className="row mb-8">
+        <div className="col s12">
+          <div className="card chat wrapper">
+            <div className="card-body">
+              <span className="card-title">Group Chat</span>
             </div>
 
-            <div className='all-messages left-align'>
+            <div className="all-messages left-align " id="test">
               {this.renderMessages()}
             </div>
-
-            <div className='card-action'>
-              <input
-                type='text'
-                placeholder='Message'
-                className='form-control'
-                value={this.state.message}
-                onChange={ev => this.setState({ message: ev.target.value })}
-              />
-              <button
-                className='btn btn-large indigo darken-1 chat-btn form-control'
-                onClick={this.sendMessage.bind(this)}
-              >
-                Send
-              </button>
-            </div>
+            <form onSubmit={this.sendMessage.bind(this)}>
+              <div className="card-action">
+                <input
+                  type="text"
+                  placeholder="Message"
+                  className="form-control"
+                  value={this.state.message}
+                  onChange={ev => this.setState({ message: ev.target.value })}
+                />
+                <button
+                  type="submit"
+                  className="btn btn-large indigo darken-1 chat-btn form-control"
+                  onClick={this.sendMessage.bind(this)}
+                >
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

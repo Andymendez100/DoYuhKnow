@@ -41,7 +41,7 @@
 
 .all-messages {
   top: 50px;
-  bottom: 50px;
+  bottom: 140px;
   width: 95%;
   position: absolute;
   margin: 0px 24px;
@@ -71,8 +71,16 @@
   height: -webkit-fill-available;
 }
 
-/* #mainPagebutton {
-  max-width: 50%;
-  margin: 10px 20%;
-  float: none;
-} */
+#mainPagebutton {
+  width: 40%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  background: rgba(84, 110, 122, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3949ab;
+  -webkit-border-radius: 1ex;
+}

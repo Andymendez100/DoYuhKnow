@@ -24,11 +24,6 @@ class Timer extends Component {
         });
         this.props.data(this.state.CountDown);
 
-
-        if (this.state.CountDown < 1) {
-            clearInterval(this.interval);
-        }
-
         if (this.state.QuestionNumber < 10) {
             if (this.state.CountDown === 0) {
                 this.setState({
@@ -52,6 +47,36 @@ class Timer extends Component {
             };
             axios.post('/api/endgame', value);
         }
+        if (this.state.CountDown < 1) {
+            clearInterval(this.interval);
+        }
+
+        if (this.state.QuestionNumber < 10) {
+            if (this.state.CountDown === 0) {
+                this.setState({
+                    CountDown: 15
+                });
+
+                this.setState({ QuestionNumber: this.state.QuestionNumber + 1 });
+                clearInterval(this.interval);
+                this.socket.emit('quiz', 'new_question');
+                this.interval = setInterval(this.Timer.bind(this), 1000);
+            }
+        } else if (
+            this.state.QuestionNumber === 10 &&
+            this.state.gameIsOver === false
+        ) {
+            this.props.number(this.state.QuestionNumber);
+            this.setState({ gameIsOver: true });
+            this.props.score();
+        }
+
+        if (this.state.QuestionNumber === 1) {
+            let value = {
+                MatchIdentication: this.props.matchtoken
+            };
+            axios.post('/api/endgame', value);
+        }
     }
 
     componentDidMount() {
@@ -62,14 +87,13 @@ class Timer extends Component {
     }
 
     render() {
-
         return (
-            <div className="container">
-                <h5 className="center">{`Question: ${this.state.QuestionNumber}/10`}</h5>
-                <h5 className="center">{`Timer: ${this.state.CountDown}`}</h5>
+            <div>
+                <h5 className='center'>{`Question: ${this.state.QuestionNumber}/10`}</h5>
+                <h5 className='center'>{`Timer: ${this.state.CountDown}`}</h5>
             </div>
         );
     }
 }
 
-export default Timer; 
+export default Timer;
