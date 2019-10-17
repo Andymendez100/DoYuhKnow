@@ -11,7 +11,7 @@
   font-weight: 300;
   text-align: center;
   padding: 10px;
-  margin: 50px 20%;
+  margin: 100px 20%;
   background-color: rgba(84, 110, 122, 0.8);
   border-radius: 5px;
 }
@@ -43,13 +43,50 @@ h2 {
   border-width: 0;
   background-color: transparent;
 }
-/* .btn-large {
+.btn-large {
   margin: 10px;
   border-radius: 5px;
-} */
+}
 .quiz {
   padding-top: 0px;
 }
 .questiontext {
   color: whitesmoke;
+}
+
+@media (max-width: 1024px){
+  #scoreboard {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 683px) and (max-width: 1023px){
+  #scoreboard {
+    margin-top: 20%;
+  } 
+}
+@media (min-width: 511px) and (max-width: 682px){
+  #scoreboard {
+    margin: 20% 10% 0 10%;
+  }
+  #scoreboard h3 {
+    font-size: 1rem;
+  }
+  #scoreboard-title {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 10px 10%;
+  }
+}
+@media (min-width: 340px) and (max-width: 510px){
+  #scoreboard {
+    margin: 20% 10% 0 10%;
+  }
+  #scoreboard h3 {
+    font-size: 1rem;
+  }
+  #scoreboard-title {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 10px 10%;
+  }
 }

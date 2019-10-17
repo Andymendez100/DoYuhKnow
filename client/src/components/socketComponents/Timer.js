@@ -24,7 +24,7 @@ class Timer extends Component {
         });
         this.props.data(this.state.CountDown);
 
-        if (this.state.QuestionNumber < 10) {
+        if (this.state.QuestionNumber < 2) {
             if (this.state.CountDown === 0) {
                 this.setState({
                     CountDown: 10
@@ -51,10 +51,10 @@ class Timer extends Component {
             clearInterval(this.interval);
         }
 
-        if (this.state.QuestionNumber < 10) {
+        if (this.state.QuestionNumber < 2) {
             if (this.state.CountDown === 0) {
                 this.setState({
-                    CountDown: 10
+                    CountDown: 1
                 });
 
                 this.setState({ QuestionNumber: this.state.QuestionNumber + 1 });
