@@ -150,47 +150,7 @@ input:-internal-autofill-selected {
   .start-button {
     max-width: 155px;
   }
-}
-@media screen and (max-height: 942px) {
-  #panel {
-    /* margin: 15%; */
-    /* line-height: 0; */
+  .all-messages {
+    width: 90%;
   }
 }
-/*
-@media (max-width: 1024px) {
-  #scoreboard {
-    margin-top: 20%;
-  }
-}
-@media (min-width: 683px) and (max-width: 1023px) {
-  #scoreboard {
-    margin-top: 20%;
-  }
-}
-@media (min-width: 511px) and (max-width: 682px) {
-  #scoreboard {
-    margin: 20% 10% 0 10%;
-  }
-  #scoreboard h3 {
-    font-size: 1rem;
-  }
-  #scoreboard-title {
-    font-weight: 300;
-    font-size: 1rem;
-    margin: 10px 10%;
-  }
-}
-@media (min-width: 340px) and (max-width: 510px) {
-  #scoreboard {
-    margin: 20% 10% 0 10%;
-  }
-  #scoreboard h3 {
-    font-size: 1rem;
-  }
-  #scoreboard-title {
-    font-weight: 300;
-    font-size: 1rem;
-    margin: 10px 10%;
-  }
-} */
