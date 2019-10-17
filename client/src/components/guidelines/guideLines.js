@@ -44,7 +44,7 @@ const GuideLines = () => {
     const guideList = guideLines[0].list;
 
     return (
-        <Paper className={classes.root}>
+        <Paper className={classes.root} id="gl">
             <Typography
                 className={classes.title}
                 variant="h3"
