@@ -48,7 +48,7 @@ class Registration extends Component {
     return (
       <div>
         <div className='row'>
-          <div className='col s6 offset-s3 z-depth-1' id='panel'>
+          <div className='col s6  z-depth-1' id='panel'>
             <h4 className='center' style={{ color: 'lightblue' }}>Registration</h4>
             <p className='lead center' style={{ color: 'whitesmoke' }}>
               You can simply create a user with us. All you need to do is to
@@ -62,7 +62,7 @@ class Registration extends Component {
               <div className='red-text'>{this.state.regError}</div>
               <div>
                 <button type='submit' className='btn btn-large indigo darken-1 right'>
-                  Login
+                  Sign Up
                 </button>
               </div>
             </form>
