@@ -15,7 +15,7 @@ class Landing extends Component {
   renderComponent() {
     if (!this.props.auth) {
       return (
-        <div className='container sizingContainer center-align vertical-center'>
+        <div className='container  center-align vertical-center'>
           <div className='row'>
             <div className='col s12'>
               <img className='logo' src={logo} />
