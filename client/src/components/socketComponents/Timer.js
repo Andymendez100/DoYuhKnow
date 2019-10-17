@@ -45,7 +45,6 @@ class Timer extends Component {
     ) {
       this.props.number(this.state.QuestionNumber);
       this.setState({ gameIsOver: true });
-      this.props.score();
     }
 
     if (this.state.QuestionNumber === 1) {
@@ -60,6 +59,7 @@ class Timer extends Component {
     this.interval = setInterval(this.Timer.bind(this), 1000);
   }
   componentWillUnmount() {
+    this.props.score();
     clearInterval(this.interval);
   }
 
