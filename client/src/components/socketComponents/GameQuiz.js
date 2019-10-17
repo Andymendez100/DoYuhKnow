@@ -127,7 +127,7 @@ class GameQuiz extends Component {
           <div className='row'>
             <div className='col'>
               <div className='quiz'>
-                <h3 className='center-align'>
+                <h3 className='center-align catQuiz'>
                   Category: {this.state.category}
                 </h3>
                 <h6 className='center-align'>{`Your points ${this.state.points}`}</h6>
@@ -154,7 +154,7 @@ class GameQuiz extends Component {
                 <div>
                   <div className='row'>
                     <button
-                      className='btn btn-large indigo darken-1 col'
+                      className='btn btn-large gregsButton indigo darken-1 col'
                       disabled={this.state.your_answer}
                       onClick={this.buttonClick}
                       id={this.state.answers[0]}
@@ -162,7 +162,7 @@ class GameQuiz extends Component {
                       {this.state.answers[0]}
                     </button>
                     <button
-                      className='btn btn-large indigo darken-1  col'
+                      className='btn btn-large gregsButton indigo darken-1  col'
                       disabled={this.state.your_answer}
                       onClick={this.buttonClick}
                       id={this.state.answers[1]}
@@ -171,7 +171,7 @@ class GameQuiz extends Component {
                     </button>
                     <div className='w-100'></div>
                     <button
-                      className='btn btn-large indigo darken-1  col'
+                      className='btn btn-large gregsButton indigo darken-1  col'
                       disabled={this.state.your_answer}
                       onClick={this.buttonClick}
                       id={this.state.answers[2]}
@@ -179,7 +179,7 @@ class GameQuiz extends Component {
                       {this.state.answers[2]}
                     </button>
                     <button
-                      className='btn btn-large indigo darken-1  col'
+                      className='btn btn-large gregsButton indigo darken-1  col'
                       disabled={this.state.your_answer}
                       onClick={this.buttonClick}
                       id={this.state.answers[3]}

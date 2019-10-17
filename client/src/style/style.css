@@ -3,6 +3,8 @@
 html {
   height: 100%;
 }
+app {
+}
 
 /* Added animated clouds to bg*/
 body {
@@ -80,7 +82,7 @@ body {
   height: 100px;
 }
 
-.btn-large {
+.gregsButton {
   padding: 0px 10px;
   border-radius: 10px;
   margin: 10px;
@@ -113,16 +115,30 @@ input:-internal-autofill-selected {
   color: whitesmoke !important;
 }
 
-@media screen and (max-width: 991px) {
-  #panel label {
-    font-size: 1rem;
+@media screen and (max-width: 654px) {
+  #panel {
+    margin: 50% 10% 0;
   }
-  .MultiMenuItem-root {
-    padding: 30px 0 0 10px;
-    font-size: 1.5rem;
+  .questiontext {
+    font-size: 1.83em;
+  }
+  .catQuiz {
+    font-size: 2em;
+  }
+  .wrapper {
+    height: 400px;
+  }
+  .gregsButton {
+    height: 100px;
   }
 }
-
+@media screen and (max-height: 942px) {
+  #panel {
+    margin: 15%;
+    line-height: 0;
+  }
+}
+/*
 @media (max-width: 1024px) {
   #scoreboard {
     margin-top: 20%;
@@ -158,4 +174,4 @@ input:-internal-autofill-selected {
     font-size: 1rem;
     margin: 10px 10%;
   }
-}
+} */
