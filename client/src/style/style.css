@@ -26,9 +26,9 @@ body {
   }
 }
 
-.container {
+/* .container {
   height: 70%;
-}
+} */
 
 .nav-wrapper {
   background-color: #455a64;
@@ -42,11 +42,11 @@ body {
   height: 450px;
 }
 
-.btn-lg {
+/* .btn-lg {
   color: white;
   background-color: #455a64;
   margin-right: 10px;
-}
+} */
 .brand-logo {
   margin-right: 50px;
 }
@@ -80,9 +80,10 @@ body {
   height: 100px;
 }
 
-.btn-large {
+.gregsButton {
   padding: 0px 10px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 ::placeholder {
@@ -97,7 +98,15 @@ body {
 #panel {
   color: lightblue;
   background-color: rgba(84, 110, 122, 0.8);
-  padding: 20px;
+  padding: 11px;
+  margin: 100px 20%;
+  border-radius: 5px;
+}
+#greg {
+  color: lightblue;
+  background-color: rgba(84, 110, 122, 0.8);
+  padding: 11px;
+  margin: 100px 20%;
   border-radius: 5px;
 }
 
@@ -110,3 +119,78 @@ input:-internal-autofill-selected {
   background-image: none !important;
   color: whitesmoke !important;
 }
+
+@media screen and (max-width: 654px) {
+  #panel {
+    margin: auto;
+  }
+  .questiontext {
+    font-size: 1.83em;
+  }
+  .catQuiz {
+    font-size: 2em;
+  }
+  .wrapper {
+    height: 400px;
+  }
+  .gregsButton {
+    height: 100px;
+  }
+  #app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .tonysthing {
+    width: 100%;
+  }
+  .chat {
+    margin: 0;
+  }
+  .start-button {
+    max-width: 155px;
+  }
+}
+@media screen and (max-height: 942px) {
+  #panel {
+    /* margin: 15%; */
+    /* line-height: 0; */
+  }
+}
+/*
+@media (max-width: 1024px) {
+  #scoreboard {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 683px) and (max-width: 1023px) {
+  #scoreboard {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 511px) and (max-width: 682px) {
+  #scoreboard {
+    margin: 20% 10% 0 10%;
+  }
+  #scoreboard h3 {
+    font-size: 1rem;
+  }
+  #scoreboard-title {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 10px 10%;
+  }
+}
+@media (min-width: 340px) and (max-width: 510px) {
+  #scoreboard {
+    margin: 20% 10% 0 10%;
+  }
+  #scoreboard h3 {
+    font-size: 1rem;
+  }
+  #scoreboard-title {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 10px 10%;
+  }
+} */
