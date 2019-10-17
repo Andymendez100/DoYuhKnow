@@ -3,8 +3,6 @@
 html {
   height: 100%;
 }
-app {
-}
 
 /* Added animated clouds to bg*/
 body {
@@ -104,6 +102,13 @@ body {
   margin: 100px 20%;
   border-radius: 5px;
 }
+#greg {
+  color: lightblue;
+  background-color: rgba(84, 110, 122, 0.8);
+  padding: 11px;
+  margin: 100px 20%;
+  border-radius: 5px;
+}
 
 .sizingContainer {
   height: 70%;
@@ -117,7 +122,7 @@ input:-internal-autofill-selected {
 
 @media screen and (max-width: 654px) {
   #panel {
-    margin: 50% 10% 0;
+    margin: auto;
   }
   .questiontext {
     font-size: 1.83em;
@@ -131,11 +136,25 @@ input:-internal-autofill-selected {
   .gregsButton {
     height: 100px;
   }
+  #app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .tonysthing {
+    width: 100%;
+  }
+  .chat {
+    margin: 0;
+  }
+  .start-button {
+    max-width: 155px;
+  }
 }
 @media screen and (max-height: 942px) {
   #panel {
-    margin: 15%;
-    line-height: 0;
+    /* margin: 15%; */
+    /* line-height: 0; */
   }
 }
 /*
