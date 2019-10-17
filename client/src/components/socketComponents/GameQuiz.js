@@ -4,6 +4,7 @@ import axios from 'axios';
 import shuffle from 'shuffle-array';
 import Timer from './Timer';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import '../../style/gamequiz.css';
 
@@ -104,6 +105,10 @@ class GameQuiz extends Component {
       );
     });
   }
+  playAgain() {
+    location.href = '/gamestart'
+  }
+
   render() {
     if (this.state.questionnumber === 10 && this.state.timer === 0) {
       return (
@@ -115,6 +120,10 @@ class GameQuiz extends Component {
                 Scoreboard
               </h3>
               <ul className='list-group'>{this.renderScores()}</ul>
+              <button component={Link}
+                to="/register" onClick={this.playAgain} className='btn btn-large indigo darken-1 '>
+                Play Again
+                </button>
             </div>
           </div>
         </div>
