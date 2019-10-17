@@ -13,8 +13,18 @@ body {
   background-repeat: repeat-x;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  animation: animatedBackground 100s linear infinite;
+  background-position: center bottom;
+  -webkit-animation: animatedBackground 90s infinite linear;
+  animation: animatedBackground 90s infinite linear;
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
 
 @keyframes animatedBackground {
